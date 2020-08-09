@@ -1,1 +1,4 @@
 *.pyc
+/.vs
+/secret.py
+/test.py
