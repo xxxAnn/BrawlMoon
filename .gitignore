@@ -2,3 +2,7 @@
 /.vs
 /secret.py
 /test.py
+/setup.py
+/dist
+/build/lib/BrawlMoon
+/BrawlMoon.egg-info

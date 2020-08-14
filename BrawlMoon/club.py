@@ -6,9 +6,11 @@ from .enums import URLS
 class BrawlClub(BrawlType):
     '''
     A Handler for Brawl Stars Club
-    call coroutine update to update the cache
+    call coroutine update to update the cached attributes
+    BrawlClub.updated: False if coroutine update was never called
+    BrawlClub.request: shorthand for BrawlClub.client.request
+    BrawlClub.__repr__: returns BrawlClub.name if update was fetched otherwise raises attribute error
     '''
-
     def __init__(self, client, tag):
         super().__init__(client)
         self.tag = tag
